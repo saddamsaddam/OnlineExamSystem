@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"  th:href="@{/css/mystyle.css}">
+</head>
+
+<body>
+<h1>how saddam hosse han gof </h1>
+<h2 th:text="${name}"/>
+<h3> we love my <span  th:text="${name}"/></h3>
+<!-- <img alt="" src="" th:src="@{/image/frnd.jpg}"> -->
+
+
+<!-- <script src=" " th:src="@{/js/myjs.js}">kur ban</script> -->
+
+<form action=" " th:attr="action=@{/index}">
+<fieldset>
+<label>Email</label>
+<input type="email" name="email" />
+<label>Name</label>
+<input type="text" name="name" />
+<label>password</label>
+<input type="password" name="email" />
+<input type="submit" value=" " th:value="Submit"/>
+</fieldset>
+</form>
+
+</body>
+</html>

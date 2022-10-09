@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+<link rel="stylesheet"  th:href="@{/css/mystyle.css}">
+<script type="text/javascript" th:src="@{/js/myjs.js}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+</style>
+</head>
+
+<body>
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+<!-- first nabvar -->
+<div class="container-fluid mt-3 row "  th:id="firstnav">
+<div class="col-sm-4">
+ <ul class="nav ">
+  <li class="nav-item">
+    <a class="nav-link" href="#"> <button class="btn  " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    <i class="fas fa-bars"></i>
+  </button></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  
+</ul>
+</div>
+<div class="col-sm-4" id="tabpart">
+	
+</div>
+<div class="col-sm-4">
+ <ul class="nav   justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="#">link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</div>
+</div>
+
+<!-- body part -->
+<div class="row container-fluid" style="margin-top:50px;">
+	<div class="col-sm-1">
+	 <img th:src="@{/image/frnd.jpg}" style="height:50px;width:50px;"  class="rounded-circle assignimg"  alt="Cinque Terre" >
+	</div>
+	<div class="col-sm-7 ">
+	
+		<div class="row">
+			<div class="col-sm-6">
+			<h1>Admit Card</h1>
+			<h3>Md Saddam Hossen <i>feb 4 2020</i></h3>
+			</div>
+			<div class="col-sm-6" style="text-align:right">
+					<a href="#"  >
+					 <i class='fas fa-ellipsis-v ' style='font-size:24px;color:black;margin-top:10px;' data-bs-toggle="modal" data-bs-target="#myModal"></i>
+					</a>
+			</div>
+		
+		</div>
+		<div class="row">
+			<div class="col-sm-6" style="border-bottom:1px solid gray;padding-bottom:30px;">
+			<h4>100 points</h4>
+			</div>
+			<div class="col-sm-6" style="text-align:right; border-bottom:1px solid gray;padding-bottom:30px;">
+			<p>Due <i>23 jan 2022 10.0 AM</i></p>
+			</div>
+		
+		</div>
+		<div>
+		<h4>All Back lock are scan here</h4>
+		<p>Thanks</p>
+		</div>
+	
+	</div>
+	<div class="col-lg-4">
+		<div class="row" style="margin-bottom:20px;">
+			<div class="col-sm-8 bg-success" style="width:400px;margin-left:50px; border-radius:5%;">
+				<div class="row">
+					<div class="col-sm-8">
+						<h1>Your Work</h1>
+					</div>
+					<div class="col-sm-4" style="color:red;margin-top:50px;">
+						<p>Missing</p>
+					</div>
+					
+				</div>
+				
+				<div id="fileshow" >
+				<div class="row work" id="workc" style="display:none;" >
+					<div class="col-sm-10" style="margin-top:13px;">
+					<label id="file-name"></label>
+					</div>
+					<div class="col-sm-2"style="text-align:right" >
+					<h6 id="cross" class="btn" onclick="fileremove()"></h6>
+					</div>
+				</div>
+				
+					<br>
+					 	
+						<label for="file-upload" th:class="custom-file-upload">
+					    <i  style="padding-left:100px;padding-right:143px;border:1px solid gray">Add or Create</i> 
+					  </label>
+					  <input th:id="file-upload" name='upload_cont_img' type="file" style="display:none;">
+					 
+				</div>
+				<div style="padding-bottom:50px;">
+					<button class="btn" style="background-color:black;padding-left:120px;padding-right:150px;color:white;margin-top:50px;">Mark as done</button>
+				</div>
+			
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+		
+	<!-- 	//second box -->
+	
+		<div class="row">
+			<div class="col-sm-8 bg-success" style="width:400px;margin-left:50px; border-radius:5%;">
+				<div class="row">
+					<div class="col-sm-2">
+						<h1><i class='fas fa-user-graduate' style='font-size:36px'></i></h1>
+					</div>
+					<div class="col-sm-10"style="margin-top:20px;">
+						<h4>Private Comments</h4>
+					</div>
+					
+				</div>
+				
+				<div style="padding-bottom:50px;" >
+				<p style=" border:1px solid gray;"onclick="privatecomment()" id="pvcmtbutton" >Add Comments to <i>Saddam Hossen  </i></p>
+				<input type="text" id="inputboxprivate" placeholder=" Comment.."  />
+				<button style="font-size:16px;margin-left:-55px;border:none;margin-top:10px;" id="btnsubmit"> <i class="material-icons" >send</i></button>
+ 				
+				</div>
+			
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	
+	</div>
+
+</div>
+
+<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10 " style="width:80%; border-radius:5%;">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3><i class='fas fa-user-graduate' style='font-size:36px;margin-right:10px;' ></i>Class Comments</h3>
+					</div>
+										
+				</div>
+				
+				<div style="padding-bottom:50px;" class="row" >
+					<div class="col-sm-12">					
+					<p onclick="publiccomment()" id="publicbutton" >Add  a Class Comments</p>
+						<input type="text" id="inputboxpublic" placeholder=" Comment.."  />
+						<button style="font-size:16px;margin-left:-55px;border:none;margin-top:10px;" id="btnsubmitpublic"> <i class="material-icons" >send</i></button>
+	 				</div>
+ 				
+				</div>
+			
+			</div>
+			<div class="col-sm-1">
+			
+			</div>
+		</div>
+
+
+
+</body>
+</html>

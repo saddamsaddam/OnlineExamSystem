@@ -1,0 +1,252 @@
+@charset "ISO-8859-1";
+body{
+	background-color: lightblue;
+}
+#firstnav{
+	border-bottom: 1px solid gray;
+}
+li{
+	display:inline;
+}
+
+ img{
+	height:100px;
+	width:100px;
+
+}
+
+.inlineimage{
+display:inline-block;
+width:360px;
+border:1px solid gray;
+margin-right:25px;
+margin-bottom:40px;	
+}
+.middlepart{
+	
+	height:100px;
+	border-left-style:none;
+	border-right-style:none;
+	border-bottom:1px solid gray;
+	border-top:1px solid gray;
+}
+a{
+	color:black;
+}
+.modalclose,righttop {
+  text-align: right;
+}
+
+/* tab */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+.tablinkv {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablinkv:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.bodytab {
+  color: white;
+ /*  display: none; */
+  width:100%;
+ 
+}
+/* 
+tab wnd */
+.topheaded{
+	padding-top:150px;
+	 background: url("/image/flower.jpeg");
+  	background-repeat: repeat;
+  	background-size:100%;
+}
+.lefthead{
+	padding:40px;
+	margin-top:50px;
+	margin-right:50px;
+
+}
+
+#viewtext
+{
+	margin-left:115px;
+}
+
+.leftright
+{
+	margin-top:50px;
+	color:black;
+	background-color:white;
+	border-radius: 5% ;
+}
+.leftrightassignment{
+	margin-top:50px;
+	color:black;
+	background-color:white;
+	border-radius: 40% ;
+	margin-left:50px;
+}
+.inputimg
+{
+	height:80px;
+	width:80px;
+}
+
+#inputbox{
+	width:550px;
+	margin-top:20px;
+	height:50px;
+	 border-radius: 50px ;
+	
+}
+#inputboxprivate{
+	width:300px;
+	margin-top:20px;
+	height:50px;
+	 border-radius: 50px ;
+	 display:none;
+	
+}
+#inputboxpublic{
+	width:500px;
+	margin-top:20px;
+	height:50px;
+	 border-radius: 50px ;
+	 display:none;
+	
+}
+#btnsubmit{
+ display:none;	
+}
+#btnsubmitpublic{
+ display:none;	
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer; 
+}
+.work
+{
+	
+	border:1px solid gray;
+	background-color:white;
+	color:black;
+	
+}
+#pvcmtbutton:hover{
+	 cursor:grabbing;
+}
+#publicbutton:hover{
+	 cursor:grabbing;
+}
+
+#copy {
+   display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 18ch;
+}
+#copyc {
+   display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 1ch;
+}
+
+/* classcode */
+.dropbtn {
+  background-color:white;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+.dropdown-content a:hover {background-color: gray;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.scrolleffect {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  max-height: 1340px;
+  overflow-y: scroll;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  background-color:gray;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:black;
+}
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+

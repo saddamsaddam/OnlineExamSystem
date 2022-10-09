@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+<link rel="stylesheet"  th:href="@{/css/mystyle.css}">
+<script type="text/javascript" th:src="@{/js/myjs.js}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+<!-- first nabvar -->
+<div class="container-fluid mt-3 row "  th:id="firstnav">
+<div class="col-sm-4">
+ <ul class="nav ">
+  <li class="nav-item">
+    <a class="nav-link" href="#"> <button class="btn  " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    <i class="fas fa-bars"></i>
+  </button></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  
+</ul>
+</div>
+<div class="col-sm-4" id="tabpart">
+<style>
+/* #stream {background-color: red;}
+#classwork {background-color: green;}
+#people {background-color: blue;} */
+</style>
+
+<button th:class="tablink" th:onclick="openPage('stream', this, 'red')">Stream</button>
+<button th:class="tablink" th:onclick="openPage('classwork', this, 'green')" th:id="defaultOpen">Classwork</button>
+<button th:class="tablink" th:onclick="openPage('people', this, 'blue')">People</button>
+
+<script>
+function openPage(pageName,elmnt,color) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("bodytab");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].style.backgroundColor = "";
+	  }
+	  document.getElementById(pageName).style.display = "block";
+	  elmnt.style.backgroundColor = color;
+	}
+
+//Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+	
+</div>
+<div class="col-sm-4">
+ <ul class="nav   justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="#">link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+</div>
+</div>
+
+
+
+<!-- Tab of body part -->
+<div th:id="stream" th:class="bodytab">
+
+<div class="row " >
+<div class="col-sm-2">
+
+</div>
+	<div class="col-sm-8 row  topheaded" id="imagev" >
+			<div class="col-sm-11">
+			<h1>MBSTU PREMIAR LEDGE</h1>
+			</div>
+			<div class="col-sm-1 righttop">
+			 <a href="#">
+			 <i class='fas fa-ellipsis-v' style='font-size:24px;color:black;margin-top:20px;margin-left:60px;' data-bs-toggle="modal" data-bs-target="#myModal"></i>
+			 </a>
+			</div>
+			
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+<div class="row " >
+<div class="col-sm-2">
+
+</div>
+	<div class="col-sm-8 row  "  >
+			<div class="col-sm-3 lefthead" >
+			<div style="border:1px solid gray;padding:20px;color:black;background-color:white;">
+				<p>UpComing <br>No work due Soon</p>
+				<a href="#" >View All</a>
+			</div>
+			</div>
+			<div class="col-sm-8 ">
+				<div class="leftright">
+					<div class="row headpaert">
+						<div class="col row">
+							<div class="col-sm-4">
+							<a target="#" href="#">
+			   			 	<img th:src="@{/image/frnd.jpg}"  class="rounded-circle"  alt="Cinque Terre" >
+			             	</a>
+							</div>
+							<div class="col-sm-8 ">
+							<p>Saddam Hossen</p>
+							<p>10 january ,2022</p>
+							</div>
+						 
+						</div>
+						<div class="col-sm  ">
+							<a href="#" style="margin-left:250px" >
+					   		 <i class='fas fa-ellipsis-v ' style='font-size:24px;color:black;margin-left:110px;margin-top:10px;' data-bs-toggle="modal" data-bs-target="#myModal"></i>
+					   		</a>
+						</div>
+					</div>
+					<div class="bodypart " >
+					<p>
+					What is Lorem Ipsum?
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					
+					Why do we use it?
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+										</p>
+					
+					</div>
+					<div class="legpart">
+						<div class="row">
+							<div class="col-sm-2">
+								<a target="#" href="#">
+				   			 	<img th:src="@{/image/frnd.jpg}"  class="rounded-circle inputimg"  alt="Cinque Terre" >
+				             	</a>
+							</div>
+							<div class="col-sm-10 ">
+							<input type="text" id="inputbox" placeholder=" Comment.." />
+							<button style="font-size:16px;margin-left:-55px;border:none;"> <i class="material-icons">send</i></button>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+<!-- AssignmentPart -->
+<div class="row " >
+<div class="col-sm-2">
+
+</div>
+	<div class="col-sm-8 row  "  >
+			<div class="col-sm-3 "  style="margin-right:50px;" >
+			
+			</div>
+			<div class="col-sm-8 " style="background-color:white;color:black;margin-top:50px; padding: 10px;border-radius: 25px;">
+				<a th:href="@{/assignmentpage}">
+				<div >
+					<div class="row headpaert " >
+						<div class="colsm-11 row">
+							<div class="col-sm-2">
+							
+			   			 	<img th:src="@{/image/frnd.jpg}" style="height:50px;width:50px;"  class="rounded-circle assignimg"  alt="Cinque Terre" >
+			             	
+							</div>
+							<div class="col-sm-10 ">
+							<p>Saddam Hossen <i>Assign a assignment:</i>AdmitCard</p>
+							<p>10 january ,2022</p>
+							</div>
+						 
+						</div>
+						<div class="col-sm-1  ">
+							
+					   		
+					   	
+						</div>
+					</div>
+					<div class="bodypart " >
+					
+					</div>
+					<div class="legpart">
+						
+					</div>
+				</div>
+				</a>
+			
+			</div>
+			
+	</div>
+	<div class="col-sm-2" style="margin-top:50px;">
+	<a href="#">
+	 <i class='fas fa-ellipsis-v ' style='font-size:24px;color:black;margin-left:-70px;margin-top:10px;' data-bs-toggle="modal" data-bs-target="#myModal"></i>
+	</a>
+	</div>
+</div>
+
+ 
+</div>
+
+<div th:id="classwork" th:class="bodytab">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div th:id="people" th:class="bodytab">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+
+
+</body>
+</html>

@@ -7,18 +7,19 @@
 <ol type="i">
     <li>Login Page</li>
     <li>Registration</li>
-    <li>Asset & Liability</li>
-    <li>Form</li>
-    <li>HouseProperty</li>
+    <li>Student Page</li>
+    <li>Student Solution Submitting Page</li>
+    <li>Admin Page</li>
+    <li>Admin Result Showing Page</li>
   </ol>
 
 # Installation Process
 <hl>
   <hl>
   <ol>
-    <li>create a netbeans  project</li>
-    <li>add  different jar files, SQL JDBC Driver</li>
-    <li>create a database in your Microsoft SQL Server Management Studio </li>
+    <li>create a eclipse  project</li>
+    <li>add  different dependencies, MYSQL JDBC Driver</li>
+    <li>create a database in your MYSQL Workbence </li>
 </ol>
     
 # Project Description:
@@ -37,3 +38,6 @@
 ![Screenshot 2022-10-10 185049](https://user-images.githubusercontent.com/56682452/194870426-d8517260-5df1-4a14-9226-d6ec4f668b60.png)
 # Admin Result Showing Page
 ![Screenshot 2022-10-10 185239](https://user-images.githubusercontent.com/56682452/194870795-b52f742d-9eb7-422d-92fe-755936cac479.png)
+# Conclusion
+ <hl>
+ <p> I am still working with security,android app,desktop application,web application.</p>
